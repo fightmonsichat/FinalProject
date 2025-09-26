@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's cook ^O^</title>
+    <link rel="icon" type="image/x-icon" href ="/FpImages/herz.png"> <!-- This is call FAVICON which displays the icon of out page: Good favicon should be rel="icon" type="image/x-icon" -->
+</head>
+
+<header>
+    <div class= "container1">
+        <img src= "https://cdn.media.amplience.net/i/canon/get-inspired-food-photography-tips-1-f9283f1f-d5f8-11ea-bea9-f8bc127793a9?qlt=80&w=1920&sm=aspect&aspect=16:9&scaleFit=poi&poi=0.20190540313720703,0.3765632234151173,0.125,0.15698587127158556&fmt=jpg&fmt.options=interlaced&bg=rgb(255,255,255)" alt= "Homescreen" style="width: 100%" >
+        <h1 class="Intro">Welcome to the Cookbook</h1>
+
+        <p class = "Introdetail"> This class is for someone who has chaotic cooking skill. You will enjoy the cooking without even have to stand up or get to the real cooking even.</p>
+    </div>
+    
+<!-- THIS IS WHERE I CAN WRITE TEXT ON TOP OF THE PICTURE USING DIV CONTAINER-->
+</header>
+
+<style>
+        .container1{
+            position: relative;
+            text-align: center;
+            color: white;}
+
+        .Intro{ /*Focus on the position and aesthetic of only the class Intro*/
+            position: absolute; /*give the absolute distance to fix the position*/
+            bottom: 80px;
+            left: 50px;
+            font-size: 80px;
+        }
+        .Introdetail{ /*to also allow the intro to be written on the image*/
+            position: absolute;
+            bottom: 50px;
+            left: 60px;
+            font-size: 20px;
+        }
+</style> <!-- Ending Style of header-->
+
+
+<nav class="image-row">
+    <a href="https://www.youtube.com/watch?v=tuDbSVyClzI" target="blank">
+    <span class="container2">
+        <img src="https://plus.unsplash.com/premium_photo-1683619761468-b06992704398?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2VyfGVufDB8fDB8fHww" alt="burger" title="Burger">
+        
+    </span>
+
+    </a><!-- Ending 1st circular image with link-->
+
+    <a href="https://www.youtube.com/watch?v=UmTqq_o6FSI" target="blank">
+        <span class="container3">
+        <img src="https://images.pexels.com/photos/1527603/pexels-photo-1527603.jpeg?cs=srgb&dl=pexels-enginakyurt-1527603.jpg&fm=jpg" alt="spaghetti" title="Spaghetti"></span>
+        
+    </a><!-- Ending 2nd circular image with link-->
+
+    
+    <a href="https://www.youtube.com/watch?v=sv3TXMSv6Lw" target="blank">
+    <span class="container4">
+        <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGl6emF8ZW58MHx8MHx8fDA%3D" alt="pizza" title="Pizza">
+        
+    </span>
+    </a><!-- Ending 3rd circular image with link-->
+
+    <a href="https://www.youtube.com/watch?v=2DciZkFIKRg" target="blank">
+    <span class="container5">
+        <img src="https://www.shutterstock.com/image-photo/hot-bonchon-fried-chicken-korean-600nw-2293324277.jpg" alt="bonchon" title="Bonchon">
+        
+    </span>
+    </a> <!-- Ending 4thd circular image with link-->
+
+</nav>
+
+<style>
+        .container2, .container3, .container4, .container5{ /*Circular cut*/
+            display: inline-block;
+            width: 200px; /*Desire width*/
+            height: 200px; 
+            position: relative; /*Allow image positioning within the container*/
+            overflow: hidden; /*Hides the parts of the image outside the circular frame */
+            border-radius: 50%; /* Creates the circular shape */ 
+        }
+        .container2 img, .container3 img, .container4 img, .container5 img{ /*This part is to adjust the image inside the circle to fit the frame*/
+            display: inline-block;
+            width: 100%; /*Desire width*/
+            height: 100%; 
+            object-fit: cover; /*Scales the image to cover the container, cropping excess*/
+        }
+        
+    .image-row {
+        display: flex; /* Aktiviert Flexbox für die Bildreihe */
+        justify-content: space-around; /* Verteilt die Bilder mit gleichem Abstand um sie herum */
+        align-items: center; /* Zentriert die Bilder vertikal innerhalb der Zeile */
+        flex-wrap: wrap; /* Erlaubt den Bildern, in die nächste Zeile zu springen, wenn der Platz nicht reicht */
+        gap: 20px; /* Fügt einen Abstand von 20px zwischen den Bildern hinzu */
+        width: 100%; /* Die Bildreihe nimmt die volle Breite des Containers ein */
+        margin: 50px 0; /* Fügt oben und unten einen Abstand von 30px hinzu */
+    }
+    .image-row span {
+        flex: 1 1 200px; /* Jedes Bild bekommt flexiblen Platz: wächst, schrumpft, Basis ist 200px */
+        max-width: 220px; /* Maximale Breite eines Bildes ist 220px */
+        min-width: 150px; /* Minimale Breite eines Bildes ist 150px */
+    }
+</style><!-- Ending Nav style -->
+
+<body>
+<div class ="premainbg">   
+    <h1>Reminiscence of cooking</h1>
+    <p>Cooking can be difficult, but cooking can also be easy. People around the world spends approximately $5,093 to $6,053 in year 2022-2024 just for food catagory. Isn't that a lot? However, </p>
+</div> 
+    <main class="mainbg">
+        <div class = con1>
+            <img src="https://img.freepik.com/free-photo/still-life-colorful-nachos-dish_23-2151874094.jpg?semt=ais_incoming&w=740&q=80" alt="MainImage">
+        </div>
+        <div class = con2>
+            <h2> You can do it!</h2>
+            <p>Overcome your strength and capabilities with us. Enjoy the cooking classes and receipts in on this website !!</p>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/049/655/073/small_2x/a-plate-full-of-different-types-of-food-png.png" alt="chef">
+        </div>
+    </main>
+</body>
+
+<style>
+    .premainbg {
+        background-color: #ffb0b5;
+
+    }
+    .mainbg {  
+        background-color: #d185af;
+        display: grid;
+        grid-template-columns: auto auto auto; /* Two equal columns */
+        grid-template-rows: auto auto;
+        padding: 20px;
+        grid-gap: 5px;
+    }
+    .con1 img {
+        display: flex;
+        flex: 1 1 auto;
+        align-items: center;
+        max-width: 100%
+    }
+    .con2 {
+        background-color: #bed2fe;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+
+    }
+    .con2 img{
+        display: inline-block;
+        max-width: 80%;
+
+    }
+</style> <!-- Ending style of both MAIN and body-->
+
+<footer>
+    Test &copy; 
+    Referencing Images from the following URLs
+    <ul>
+        <li>https://www.pexels.com/photo/close-up-photography-of-burger-1527603/</li>
+        <li>https://unsplash.com/photos/8manzosRGPE</li>
+        <li>https://unsplash.com/photos/jUPOXXRNdcA</li>
+        <li>https://www.shutterstock.com/image-photo/hot-bonchon-fried-chicken-korean-600nw-2293324277.jpg</li>
+        <li>https://img.freepik.com/free-photo/still-life-colorful-nachos-dish_23-2151874094.jpg?semt=ais_incoming&w=740&q=80</li>
+        <li>https://static.vecteezy.com/system/resources/thumbnails/049/655/073/small_2x/a-plate-full-of-different-types-of-food-png.png</li>
+        <li>https://cdn.media.amplience.net/i/canon/get-inspired-food-photography-tips-1-f9283f1f-d5f8-11ea-bea9-f8bc127793a9?qlt=80&w=1920&sm=aspect&aspect=16:9&scaleFit=poi&poi=0.20190540313720703,0.3765632234151173,0.125,0.15698587127158556&fmt=jpg&fmt.options=interlaced&bg=rgb(255,255,255)</li>
+    </ul>
+</footer>
+</html>
+
